@@ -1,19 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toyota Boshoku BEC Attack 2019 — Case Study</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toyota Boshoku Case Study</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="root"></div>
-  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js" crossorigin></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7/babel.min.js"></script>
-  <script type="text/babel" src="js/app.jsx" data-presets="react"></script>
+
+<canvas id="matrix-canvas"></canvas>
+
+<div class="slides-container">
+
+<!-- COVER -->
+<section class="slide active grid-bg">
+  <div class="glass slide-box center">
+    <h1 class="font-display glitch" data-text="TOYOTA">TOYOTA</h1>
+    <h2 class="neon-glow-red">Business Email Compromise</h2>
+    <p class="font-mono-tech">URBAN CYBER INCIDENT REPORT</p>
+  </div>
+</section>
+
+<!-- ABSTRACT -->
+<section class="slide grid-bg">
+  <div class="glass slide-box">
+    <h2>Abstract</h2>
+
+    <div class="card-base p">
+      <p>
+        The Toyota Boshoku cyberattack represents a critical case of Business Email Compromise (BEC), 
+        where attackers exploited human trust and organizational communication systems.
+      </p>
+    </div>
+
+    <div class="card-base p">
+      <p>
+        This study explores the attack structure, vulnerabilities, and impact, while proposing 
+        preventive strategies for modern enterprise environments.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- EXECUTIVE -->
+<section class="slide grid-bg">
+  <div class="glass slide-box">
+    <h2>Executive Summary</h2>
+
+    <div class="grid">
+      <div class="card-base p">
+        <h3>Incident</h3>
+        <p>Fake executive email triggered unauthorized fund transfer.</p>
+      </div>
+
+      <div class="card-base p">
+        <h3>Loss</h3>
+        <p>Millions lost due to lack of verification.</p>
+      </div>
+
+      <div class="card-base p">
+        <h3>Cause</h3>
+        <p>Human error + weak security protocols.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BACKGROUND -->
+<section class="slide grid-bg">
+  <div class="glass slide-box">
+    <h2>Background Information</h2>
+
+    <p>
+      Toyota Boshoku operates within a complex global supply chain environment,
+      making frequent financial transactions a norm.
+    </p>
+
+    <div class="grid">
+      <div class="card-base p">
+        <h3>Industry</h3>
+        <p>Automotive manufacturing</p>
+      </div>
+
+      <div class="card-base p">
+        <h3>Risk</h3>
+        <p>High transaction volume → easier to disguise fraud</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="slide grid-bg">
+  <div class="glass slide-box">
+    <h2>Problem Description</h2>
+
+    <ul>
+      <li>No multi-step verification</li>
+      <li>Email trust without validation</li>
+      <li>Lack of employee awareness</li>
+    </ul>
+
+    <div class="card-base p">
+      <p>
+        The attack exploited psychological manipulation rather than technical vulnerabilities.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="slide grid-bg">
+  <div class="glass slide-box">
+    <h2>Methodology & Analysis</h2>
+
+    <div class="grid">
+      <div class="card-base p">
+        <h3>Email Analysis</h3>
+        <p>Header spoofing, domain similarity</p>
+      </div>
+
+      <div class="card-base p">
+        <h3>Behavior Analysis</h3>
+        <p>Employee response patterns</p>
+      </div>
+
+      <div class="card-base p">
+        <h3>System Review</h3>
+        <p>Security controls & gaps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="slide grid-bg">
+  <div class="glass slide-box">
+    <h2>Proposed Solutions</h2>
+
+    <div class="grid">
+      <div class="card-base p">
+        <h3>Verification</h3>
+        <p>Call-back or 2FA approval</p>
+      </div>
+
+      <div class="card-base p">
+        <h3>Training</h3>
+        <p>Regular phishing simulations</p>
+      </div>
+
+      <div class="card-base p">
+        <h3>Technology</h3>
+        <p>AI-based email filtering</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="slide grid-bg">
+  <div class="glass slide-box">
+    <h2>Results & Evaluation</h2>
+
+    <div class="grid">
+      <div class="card-base p">
+        <h3>Improvement</h3>
+        <p>Reduced phishing success rates</p>
+      </div>
+
+      <div class="card-base p">
+        <h3>Detection</h3>
+        <p>Faster anomaly identification</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONCLUSION -->
+<section class="slide grid-bg">
+  <div class="glass slide-box">
+    <h2>Conclusion & Recommendations</h2>
+
+    <p>
+      Human awareness remains the weakest link in cybersecurity. Strengthening both 
+      technical and behavioral defenses is essential.
+    </p>
+
+    <div class="card-base p">
+      <ul>
+        <li>Implement strict verification</li>
+        <li>Continuous employee training</li>
+        <li>Adopt layered security</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- NAV -->
+<div class="nav-controls">
+  <div class="nav-btn" onclick="prev()">↑</div>
+  <div class="nav-btn" onclick="next()">↓</div>
+</div>
+
+<div class="progress-bar" id="progress"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
